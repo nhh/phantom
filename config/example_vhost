@@ -1,0 +1,11 @@
+{
+  "id": "my-awesome-server2",
+  "name": "Hello World2",
+  "listenUri": "https://example.com:8091/api",
+  "targetUri": "http://my-service:8080",
+  "sslCaCert": "./config/ca-cert.key",
+  "sslCert": "./config/ca-cert.key",
+  "sslKey": "./config/ca-cert.key",
+  "discoveryType": "dns",
+  "balancingRule": "srv"
+}

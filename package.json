@@ -1,0 +1,25 @@
+{
+  "name": "phantom",
+  "description": "Basic reverse proxy, built for the cloud and docker usage.",
+  "dependencies": {
+    "rxjs": "^6.1.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "typescript": "2.9.2",
+    "ts-node": "~4.1.0",
+    "tslint": "~5.9.1",
+    "@types/node": "^10.3.4",
+    "@types/express": "^4.16.0",
+    "@types/request": "^2.47.1",
+    "request": "^2.87.0"
+  },
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "serve": "node dist/out-tsc/application.js",
+    "test": "jest --forceExit --coverage --verbose",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  }
+}
